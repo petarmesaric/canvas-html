@@ -10,7 +10,7 @@
 
 .navbar {
   position: relative;
-  min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  min-height: 100px; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
   border: 1px solid transparent;
 
@@ -197,6 +197,7 @@
   margin-right: @navbar-padding-horizontal;
   padding: 9px 10px;
   .navbar-vertical-align(34px);
+  margin-top: 30px;
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
@@ -394,7 +395,7 @@
 
 // Default navbar
 .navbar-default {
-  background-color: @navbar-default-bg;
+  background-color: @dark-bg;
   border-color: @navbar-default-border;
 
   .navbar-brand {

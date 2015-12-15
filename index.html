@@ -22,7 +22,8 @@
 </head>
 <body>
 
-    <header>
+<!-- Old nav -->
+<!--     <header>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -39,9 +40,38 @@
                     </nav>
                 </div>
             </div>
-        </div>
-        
-    </header>
+        </div>        
+    </header> -->
+
+<!-- New Nav (Bootstrap default) -->
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle sendvic-toggle" data-toggle="collapse" data-target="#nav-sendvic">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll"><h1>Canvas Install</h1></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="nav-sendvic">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden"></li>
+                    <li><a class="page-scroll" href="#hero">Home</a></li>
+                    <li><a class="page-scroll" href="#installation">Installation</a></li>
+                    <li><a class="page-scroll" href="#plugins">Plugins</a></li>
+                    <li><a class="page-scroll" href="#custom">Custom</a></li>
+                </ul>
+            </div><!-- navbar-collapse -->
+
+        </div><!-- container-fluid -->
+    </nav> <!-- navbar -->
+</header>
+
     <article id="hero">
         <div class="container">
             <div class="row">
@@ -231,7 +261,7 @@
                     Please describe what you would like and we will contact you.</p>
                 </div>
                 <div class="col-md-4">
-                    <img class="width100" src="images/some_image.png" alt="">
+                    <img class="width100" src="http://lorempixel.com/500/350/" alt="">
                 </div>
             </div>
         </div>
@@ -260,10 +290,16 @@
 
     </footer>
 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="build/jquery.plugins.min.js"></script>
     <script src="build/scripts.min.js"></script>
+    
 
 </body>
 </html>
