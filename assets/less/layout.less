@@ -7,8 +7,14 @@ p {
 	padding-bottom: 30px;
 }
 
+
 .container {
 	padding: 88px 0;
+
+}
+
+.width100 {
+	width: 100%;
 }
 
 .btn {
@@ -16,6 +22,7 @@ p {
 	padding: 10px 20px;
 	text-transform: uppercase;
 	margin: 40px auto;
+	width: 220px;
 	display: block;
 }
 
@@ -180,6 +187,10 @@ header {
 		font-size: 23px;
 		text-transform: uppercase;
 	}
+
+	img {
+		width: 100%;
+	}
 }
 
 #plugins {
@@ -250,6 +261,19 @@ footer {
 	.copy {
 		text-align: center;
 		padding-bottom: 10px;
+	}
+
+}
+
+
+
+@media (max-width: @screen-xs-max) {
+	.container {
+		padding: 88px 15px;
+	}
+
+	header .container {
+		padding: 0 15px;
 	}
 
 }
